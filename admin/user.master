@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user_user" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>VIP7-11 管理後台</title>
+    <link href="style/admin.css"  type="text/css" rel="Stylesheet" />
+    <script id="Back" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        function keepsession() {
+            document.getElementById("Back").src = "sessionkeeper.aspx?RandStr=" + Math.random();
+            window.setTimeout("keepsession()", 300000);
+        }
+        keepsession();
+
+        function openNewWindow() {
+            popupWin = window.open('/user/filemanager.html',
+            'open_window', 'menubar=0, toolbar=0, location, directories, status, scrollbars, resizable, dependent, width=850, height=480, left=80, top=20')
+        }
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form" runat="server">
+        <div id="wrapper">
+    	    <div id="header">    	       
+    	        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                </ajaxToolkit:ToolkitScriptManager>
+    	        <div style="text-align: right; width: 40%; float: right;"><a href="../index.aspx">vip7-11 首頁</a>&nbsp;</div>
+    	        <div style="width: 59%;"><span style="font-size: 11pt; font-weight: bold;">&nbsp;vip7-11 管理後台</span>                    
+            </div>    	        
+    	    </div>
+    	    <div id="nav1">
+    	    <table style="width: 100%; border-width: 0px; border-collapse: collapse;">
+    	        <tr>
+    	            <td>
+    	                <ul id="menus">    
+    	                    <li><a href="../admin/index.aspx">網站資訊</a></li>
+                            <li><a href="../index.aspx">我的網站</a></li>
+		                    <li><asp:LinkButton ID="btnLogout" runat="server" onclick="btnLogout_Click">登出</asp:LinkButton></li>
+	                    </ul> 
+    	            </td>
+    	        </tr>
+    	    </table>	                           
+        </div>
+    	<div id="content-wrapper">
+    	<div id="sidebar">            
+            <ajaxToolkit:Accordion ID="Menu" runat="server" FramesPerSecond="24" FadeTransitions="false" HeaderCssClass="header" TransitionDuration="600" ContentCssClass="content">
+                <Panes>      
+                    <ajaxToolkit:AccordionPane ID="SystemMsgPane" runat="server">
+                        <Header>系統訊息</Header>
+                        <Content>
+                            <ul class="sidemenu">
+	                            <li><a href="index.aspx">系統資訊</a></li>
+	                        </ul>
+                        </Content>
+                    </ajaxToolkit:AccordionPane>              
+                    <ajaxToolkit:AccordionPane ID="UserPane" runat="server">
+                        <Header>會員管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+                                <li><a href="account_list.aspx?menu=1">帳號列表</a></li>
+                                <li><a href="account_add.aspx?menu=1">新增帳號</a></li>
+	                        </ul>
+                        </Content>
+                    </ajaxToolkit:AccordionPane>
+                    <ajaxToolkit:AccordionPane ID="WebPane" runat="server">
+                        <Header>網站管理</Header>
+                        <Content>
+                            <ul class="sidemenu">                            
+                                <li><a href="webinfo.aspx?menu=2">基本設定</a></li> 	                            
+	                            <li><a href="webintro.aspx?menu=2">資訊設定</a></li>
+                                <li><a target="_blank" href="../management_tools/zhongdikaiEdit/index.aspx?menu=2">首頁圖片設定</a></li>
+                                <li><a href="logistics.aspx?menu=2">出貨進度設定</a></li>  
+                                <%--<li><a href="web_adControl.aspx?menu=2">首頁圖片設定</a></li>
+                                <li><a href="web_adControl.aspx?menu=2">首頁圖片設定</a></li>
+                                <li><a href="web_adControl.aspx?menu=2">首頁圖片設定</a></li>--%>
+                            </ul>
+                        </Content>
+                    </ajaxToolkit:AccordionPane>
+                    <ajaxToolkit:AccordionPane ID="CartPane" runat="server">
+                        <Header>購物車管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+                                <li><a href="orders.aspx?menu=3">訂單管理</a></li>
+	                            <li><a href="shoppingcfg.aspx?menu=3">購物功能設定</a></li>
+	                            <%--<li><a href="#">會員管理</a></li>--%>
+                            </ul>
+                        </Content>
+                    </ajaxToolkit:AccordionPane>
+                    <ajaxToolkit:AccordionPane ID="ProductPane" runat="server">
+                        <Header>商品管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+	                            <li><a href="pdt_list.aspx?menu=4">商品清單</a></li>
+	                            <li><a href="pdt_add.aspx?menu=4">新增商品</a></li>
+                                <li><a href="pdt_specific.aspx?menu=4">商品規格</a></li>
+	                            <%--<li><a href="pdt_item.aspx?menu=4">分類設定</a></li>
+                                <li><a href="pdt_num.aspx?menu=4">限量商品設定</a></li>--%>
+                            </ul>
+                        </Content>
+                    </ajaxToolkit:AccordionPane>
+                    <%--<ajaxToolkit:AccordionPane ID="NewsPane" runat="server">
+                        <Header>活動管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+	                            <li><a href="activ_list.aspx?menu=5">活動清單</a></li>
+	                            <li><a href="activ_add.aspx?menu=5">新增活動</a></li>
+                            </ul>
+                        </Content>                        
+                    </ajaxToolkit:AccordionPane>--%>
+                    <ajaxToolkit:AccordionPane ID="MsgPane" runat="server">
+                        <Header>留言管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+	                            <li><a href="msg_list.aspx?menu=5">留言清單</a></li>
+	                            <li><a href="msg_add.aspx?menu=5">新增留言</a></li>
+                            </ul>
+                        </Content>                        
+                    </ajaxToolkit:AccordionPane>
+                    <ajaxToolkit:AccordionPane ID="AccordionPane1" runat="server">
+                        <Header>FAQ管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+	                            <li><a href="faq_list.aspx?menu=6">FAQ清單</a></li>
+	                            <li><a href="faq_add.aspx?menu=6">新增FAQ</a></li>
+                            </ul>
+                        </Content>                        
+                    </ajaxToolkit:AccordionPane>
+                    <ajaxToolkit:AccordionPane ID="AccordionPane2" runat="server">
+                        <Header>優惠卷管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+	                            <li><a href="coupon_M.aspx?menu=7">優惠卷管理</a></li>
+                            </ul>
+                        </Content>                        
+                    </ajaxToolkit:AccordionPane>
+                    <%--<ajaxToolkit:AccordionPane ID="AccordionPane1" runat="server">
+                        <Header>電子報管理</Header>
+                        <Content>
+                            <ul class="sidemenu">
+	                            <li><a href="e_paper_add.aspx?menu=7">新增電子報</a></li>
+                                <li><a href="e_paper_sending.aspx?menu=7">電子報發送</a></li>
+                                <li><a href="e_paper_setting.aspx?menu=7">電子報設定</a></li>
+                            </ul>
+                        </Content>                        
+                    </ajaxToolkit:AccordionPane>--%>
+                </Panes>
+            </ajaxToolkit:Accordion>            
+            <asp:ContentPlaceHolder ID="side" runat="server">
+            </asp:ContentPlaceHolder>
+		</div>		
+    	<div id="main">    			
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+    		</div>				
+    	</div>    
+    	<div id="footer">
+    		<p>vip7-11 版權所有 CopyRight(c)2012 All right reserved.</p>
+    	</div>	
+    </div>
+    </form>
+</body>
+</html>
