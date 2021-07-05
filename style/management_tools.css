@@ -1,0 +1,20 @@
+﻿.all
+{
+    width:980px;
+    margin:5px auto;
+}
+.all .title
+{
+    margin-bottom:5px;
+    background-repeat:no-repeat;
+    text-align:right;
+    padding:100px 20px 0 0;
+}
+.all .main_M
+{
+}
+.littleMon
+{
+    text-align:center;
+    color:White;
+}

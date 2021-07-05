@@ -1,0 +1,171 @@
+﻿.all .main .top_Board
+{
+    clear:both;
+    margin-bottom:5px;
+}
+.TBIMG
+{
+    padding-left:400px;
+}
+.all .main .top_Board .TB_photo
+{
+}
+.all .main .top_Board .TB_photo .TB_2pic
+{
+    float:left;
+}
+.all .main .top_Board .TB_photo .TB_2pic .TB_2pic_left
+{
+    width:160px;
+    height:160px;
+    background-image:url(../image/lelecoco/TB1.png);
+    background-repeat:no-repeat;
+    float:left;
+}
+.TB1
+{
+    padding-top:20px;
+    padding-left:25px;
+}
+.all .main .top_Board .TB_photo .TB_2pic .TB_2pic_right
+{
+    width:160px;
+    height:160px;
+    background-image:url(../image/lelecoco/TB2.png);
+    background-repeat:no-repeat;
+    margin-top:40px;
+    margin-left:-20px;
+    float:right;
+}
+.all .main .top_Board .TB_photo .TB_5pic
+{
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_2
+{
+    float:left;
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_2 .TB_5pic_2_left
+{
+    width:160px;
+    height:160px;
+    background-image:url(../image/lelecoco/TB3.png);
+    background-repeat:no-repeat;
+    margin-left:-20px;
+    float:left;
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_2 .TB_5pic_2_right
+{
+    width:160px;
+    height:160px;
+    background-image:url(../image/lelecoco/TB4.png);
+    background-repeat:no-repeat;
+    margin-top:40px;
+    margin-left:-20px;
+    float:right;
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_3
+{
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_3 .TB_5pic_3_2
+{
+    float:left;
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_3 .TB_5pic_3_2 .TB_5pic_3_2_left
+{
+    width:160px;
+    height:160px;
+    background-image:url(../image/lelecoco/TB5.png);
+    background-repeat:no-repeat;
+    margin-left:-20px;
+    float:left;
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_3 .TB_5pic_3_2 .TB_5pic_3_2_right
+{
+    width:160px;
+    height:160px;
+    background-image:url(../image/lelecoco/TB6.png);
+    background-repeat:no-repeat;
+    margin-top:40px;
+    margin-left:-20px;
+    float:right;
+}
+.all .main .top_Board .TB_photo .TB_5pic .TB_5pic_3 .TB_5pic_3_1
+{
+    width:160px;
+    height:160px;
+    background-image:url(../image/lelecoco/TB7.png);
+    background-repeat:no-repeat;
+    margin-left:-20px;
+    float:left;
+}
+.all .main .top_Board .TB_text
+{
+    clear:both;
+}
+.all .main .top_Board .TB_text .TB_2text
+{
+    float:left;
+}
+.all .main .top_Board .TB_text .TB_2text .TB_2text_left
+{
+    text-align:center;
+    width:160px;
+    float:left;
+}
+.all .main .top_Board .TB_text .TB_2text .TB_2text_right
+{
+    text-align:center;
+    width:160px;
+    margin-left:-20px;
+    float:right;
+}
+.all .main .top_Board .TB_text .TB_5text
+{
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_2
+{
+    float:left;
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_2 .TB_5text_2_left
+{
+    text-align:center;
+    width:160px;
+    margin-left:-20px;
+    float:left;
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_2 .TB_5text_2_right
+{
+    text-align:center;
+    width:160px;
+    margin-left:-20px;
+    float:right;
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_3
+{
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_3 .TB_5text_3_2
+{
+    float:left;
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_3 .TB_5text_3_2 .TB_5text_3_2_left
+{
+    text-align:center;
+    width:160px;
+    margin-left:-20px;
+    float:left;
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_3 .TB_5text_3_2 .TB_5text_3_2_right
+{
+    text-align:center;
+    width:160px;
+    margin-left:-20px;
+    float:right;
+}
+.all .main .top_Board .TB_text .TB_5text .TB_5text_3 .TB_5text_3_1
+{
+    text-align:center;
+    width:160px;
+    margin-left:-20px;
+    float:left;
+}
+

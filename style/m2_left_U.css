@@ -1,0 +1,613 @@
+﻿#TopAD1{width:200px; height:170px; background:url(../image/lelecoco/m2_left_Ubkg.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD1 .TopAdright1
+{
+    z-index:1;
+    position:absolute;
+    padding-left:8px;
+    padding-top:26px;
+    width:185px;
+    height:135px;
+}
+#TopAD1 .link1
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:140px;
+    height:20px;
+}
+#TopAD1 .link1 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD1 .link1 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD1 .link1 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD1 .link1 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD2{width:200px; height:170px; background:url(../image/lelecoco/m2_left_Dbkg.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD2 .TopAdright2
+{
+    z-index:1;
+    position:absolute;
+    padding-left:8px;
+    padding-top:26px;
+    width:185px;
+    height:135px;
+}
+#TopAD2 .link2
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:140px;
+    height:20px;
+}
+#TopAD2 .link2 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD2 .link2 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD2 .link2 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD2 .link2 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD4{width:200px; height:170px; background:url(../image/lelecoco/m2_left_Ubkg.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD4 .TopAdright4
+{
+    z-index:1;
+    position:absolute;
+    padding-left:8px;
+    padding-top:26px;
+    width:185px;
+    height:135px;
+}
+#TopAD4 .link4
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:140px;
+    height:20px;
+}
+#TopAD4 .link4 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD4 .link4 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD4 .link4 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD4 .link4 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD5{width:200px; height:170px; background:url(../image/lelecoco/m2_left_Dbkg.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD5 .TopAdright5
+{
+    z-index:1;
+    position:absolute;
+    padding-left:8px;
+    padding-top:26px;
+    width:185px;
+    height:135px;
+}
+#TopAD5 .link5
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:140px;
+    height:20px;
+}
+#TopAD5 .link5 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD5 .link5 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD5 .link5 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD5 .link5 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD3{width:560px; height:345px;}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD3 .TopAdright3
+{
+    z-index:1;
+    position:absolute;
+    width:560px;
+    height:345px;
+}
+#TopAD3 .link3
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:315px;
+    height:20px;
+}
+#TopAD3 .link3 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD3 .link3 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD3 .link3 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD3 .link3 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD6{width:485px; height:225px; background:url(../image/lelecoco/m5_left_UBK.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD6 .TopAdright6
+{
+    z-index:1;
+    position:absolute;
+    padding-left:10px;
+    padding-top:10px;
+    width:465px;
+    height:205px;
+}
+#TopAD6 .link6
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:190px;
+    height:20px;
+}
+#TopAD6 .link6 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD6 .link6 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD6 .link6 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD6 .link6 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD7{width:485px; height:225px; background:url(../image/lelecoco/m5_left_DBK.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD7 .TopAdright7
+{
+    z-index:1;
+    position:absolute;
+    padding-left:10px;
+    padding-top:10px;
+    width:465px;
+    height:205px;
+}
+#TopAD7 .link7
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:190px;
+    height:20px;
+}
+#TopAD7 .link7 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD7 .link7 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD7 .link7 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD7 .link7 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD8{width:485px; height:225px; background:url(../image/lelecoco/m5_right_UBK.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD8 .TopAdright8
+{
+    z-index:1;
+    position:absolute;
+    padding-left:10px;
+    padding-top:10px;
+    width:465px;
+    height:205px;
+}
+#TopAD8 .link8
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:190px;
+    height:20px;
+}
+#TopAD8 .link8 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD8 .link8 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD8 .link8 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD8 .link8 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD9{width:485px; height:225px; background:url(../image/lelecoco/m5_right_DBK.jpg);}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD9 .TopAdright9
+{
+    z-index:1;
+    position:absolute;
+    padding-left:10px;
+    padding-top:10px;
+    width:465px;
+    height:205px;
+}
+#TopAD9 .link9
+{
+    z-index:2;
+    position:absolute;
+    padding-left:25px; 
+    padding-top:190px;
+    height:20px;
+}
+#TopAD9 .link9 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD9 .link9 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD9 .link9 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD9 .link9 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD10{width:200px; height:148px;}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD10 .TopAdright10
+{
+    z-index:1;
+    position:absolute;
+    width:200px;
+    height:148px;
+}
+#TopAD10 .link10
+{
+    z-index:2;
+    position:absolute;
+    padding-top:125px;
+    padding-left:10px; 
+    height:20px;
+}
+#TopAD10 .link10 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD10 .link10 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD10 .link10 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD10 .link10 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD11{width:200px; height:148px;}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD11 .TopAdright11
+{
+    z-index:1;
+    position:absolute;
+    width:200px;
+    height:148px;
+}
+#TopAD11 .link11
+{
+    z-index:2;
+    position:absolute;
+    padding-top:125px;
+    padding-left:10px; 
+    height:20px;
+}
+#TopAD11 .link11 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD11 .link11 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD11 .link11 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD11 .link11 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD12{width:200px; height:148px;}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD12 .TopAdright12
+{
+    z-index:1;
+    position:absolute;
+    width:200px;
+    height:148px;
+}
+#TopAD12 .link12
+{
+    z-index:2;
+    position:absolute;
+    padding-top:125px;
+    padding-left:10px; 
+    height:20px;
+}
+#TopAD12 .link12 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD12 .link12 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD12 .link12 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD12 .link12 ul li.off {
+	background: #111;
+	color: #fff;
+}
+
+#TopAD13{width:200px; height:148px;}
+h2{padding:15px 10px 5px 10px; margin:0;}
+
+#TopAD13 .TopAdright13
+{
+    z-index:1;
+    position:absolute;
+    width:200px;
+    height:148px;
+}
+#TopAD13 .link13
+{
+    z-index:2;
+    position:absolute;
+    padding-top:125px;
+    padding-left:10px; 
+    height:20px;
+}
+#TopAD13 .link13 ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display: block;
+	padding-top:1px;
+}
+#TopAD13 .link13 ul li {
+	width: 14px;
+	height: 14px;
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 1px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#TopAD13 .link13 ul li.on {
+	background: #fff;
+	color: #000;
+}
+#TopAD13 .link13 ul li.off {
+	background: #111;
+	color: #fff;
+}

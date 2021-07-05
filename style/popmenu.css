@@ -1,0 +1,92 @@
+﻿/* 整體設置*/ 
+.navigation {
+	margin: 0 3px; 
+	padding: 0;	
+	list-style-type:none; 
+	font-size: 8pt; 
+	position:absolute;
+	z-index: 65535;
+}
+
+.navigation li {
+	float:left; 
+    padding: 0; 
+	margin:0 5px 0 0; 
+	_margin:0 0 0 0; 
+	width:64px;
+}
+
+/* 設置選單區塊*/
+.navigation li dl { 
+	width:64px;/*ie6*/
+    margin:0; 
+	padding:0;
+}
+
+.navigation li dl dt
+{
+    border: solid 1px #999;
+    background-color:#f6ecec;
+}
+ 
+.navigation li dt a , .navigation li dd a{ display:block;}
+ 
+ 
+/* 設置主選單dt */
+.navigation li dt {
+	margin:0;
+	padding: 1px 0 4px 0;
+	text-align:center;
+	font-weight: bold;
+	width:64px;
+	height:10px;
+	overflow:hidden;	
+	border: solid 1px #999;
+	background-color: #efefef;
+	}
+ 
+.navigation li dt a ,.navigation  li dt a:visited {
+	display:block; 
+    color:#333;
+    text-decoration:none;
+	}
+ 
+/* 設置子選單dd */
+.navigation li dd { 
+	margin:0 0 0 25px; 
+    padding:0; 
+	color: #333;
+	text-align: center; 
+	background-color:#CDE5FF;
+	font-size: 10pt;
+	border-top: solid 1px #333;
+	border-left: solid 1px #333;
+	border-right: solid 1px #333;
+	width: 120px;
+	}
+ 
+.navigation li dd.last {
+	border-bottom: solid 1px #CDE5FF;
+}
+ 
+.navigation li dd a, .navigation  li dd a:visited {
+	display:block; 
+	color:#333; 
+    text-decoration:none; 
+	padding:4px 5px;
+}
+ 
+ 
+/*隱藏子選單*/
+.navigation li dd { display:none;}
+ 
+ 
+/* 滑鼠滑入顯示子選單 */
+.navigation li:hover dd, .navigation li a:hover dd { display:block;}
+ 
+/*ie6 hack*/
+.navigation li:hover,.navigation li a:hover { border:0;}
+.navigation table { border-collapse:collapse; 
+    padding:0; 		
+	text-align:left;
+	}
