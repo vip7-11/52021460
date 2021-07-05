@@ -1,0 +1,42 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="management_tools_MasterPage, App_Web_masterpage.master.8728bb32" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../style/management_tools.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ContentPlaceHolder id="form" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableScriptGlobalization="True">
+    </asp:ToolkitScriptManager>
+    <div class="all">
+    
+    <asp:ContentPlaceHolder id="all" runat="server">
+    </asp:ContentPlaceHolder>
+        <div class="title" id="titleBK" runat="server">
+        <asp:ContentPlaceHolder id="title" runat="server">
+        </asp:ContentPlaceHolder>
+            <asp:Button ID="Button3" runat="server" Text="回首頁" PostBackUrl="/index.aspx" />
+            <asp:Button ID="Button1" runat="server" 
+                PostBackUrl="/admin/index.aspx" Text="回管理者首頁" />
+            <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="登出" />
+        </div>
+        <div class="main_M">
+        <asp:ContentPlaceHolder id="main" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="littleMon">
+            Codeing By littleMon
+        </div>
+    </div>
+    </form>
+</body>
+</html>
