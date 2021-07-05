@@ -1,0 +1,297 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_masterpage.master.cdcab7d2" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+    <meta id="KeywordsMeta" runat="server" name="keywords" lang="zh-TW" content=""/>
+    <meta id="KeywordsMeta2" runat="server" name="keywords" content=""/>
+    <meta name="keywords" lang="EN" content="VIP購物商城,vip7-11,www.vip7-11.com.tw" />
+    <meta id="DescriptionMeta" runat="server" name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="zh-TW" />
+    <meta name="COPYRIGHT" content="Copyright (c) by VIP購物商城 www.vip7-11.com.tw" />
+    <meta name="author" content="壓馬路有限公司, yamazoo@gmail.com" />
+<%--<div style="margin:0 auto;position:relative;width: 1300px;">
+<script language="javascript" src="http://code.54kefu.net/kefu/js/103/109303.js" charset="utf-8" type="text/javascript"></script></div>
+克服
+<script type="text/javascript">
+    (function () {
+        var c = document.createElement("script");
+        c.type = "text/javascript";
+        c.src = ("https:" == document.location.protocol ? "https" : "http") + "://2.cami.yesing.com.tw/patrol/slide/operator/text/3483732?appear=simple&ft=ru";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(c, s);
+    })();
+</script>--%>
+<script type="text/javascript">
+    function shopcarShow() {
+        window.open("shopcar.aspx", "ShopCar", "height=600, width=800, top=0, left=0, toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=no, status=no");
+    }
+</script>
+<script type="text/javascript">
+    function shopcar(p_id) {
+        window.open("shopcar.aspx?page=" + p_id, "ShopCar", "height=600, width=800, top=0, left=0, toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=no, status=no");
+    }
+</script>
+    <link href="style/index_MasterPage.css" rel="stylesheet" type="text/css" />
+    <link href="style/popmenu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    .imgstyle
+    {
+        vertical-align:middle;
+    }
+    .floatFontstyle
+    {
+        font-size:10pt;
+        font-family:@華康POP1體W9(P);
+        padding-top:5px;
+        text-align:center;
+    }
+    </style>
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <!--浮動式瀏覽商品-->
+    <script src="Scripts/float_menu.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ContentPlaceHolder id="form" runat="server">        
+    </asp:ContentPlaceHolder>
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableScriptGlobalization="True"></asp:ToolkitScriptManager>
+    <div class="all">
+    <asp:ContentPlaceHolder id="all" runat="server">        
+    </asp:ContentPlaceHolder>
+        <div class="banner" id="banner_BK" runat="server">
+        <asp:ContentPlaceHolder ID="banner" runat="server">
+        </asp:ContentPlaceHolder>
+            <div class="banner_up">
+            <asp:ContentPlaceHolder ID="banner_up" runat="server">
+            </asp:ContentPlaceHolder>
+                <asp:HyperLink ID="loginHL" runat="server"></asp:HyperLink>
+                <asp:HyperLink ID="regHL" runat="server"></asp:HyperLink>
+                <%--<asp:HyperLink ID="shopcarHL2" runat="server" NavigateUrl="javascript:shopcarShow()" Text="|購物車|"></asp:HyperLink>--%>
+                <asp:HyperLink ID="shopcarHL" runat="server" NavigateUrl="car.aspx" Text="|購物車|"></asp:HyperLink>
+                <asp:HyperLink ID="shopcarList" runat="server" NavigateUrl="shoppinghistory.aspx" Text="|訂單查詢|"></asp:HyperLink>
+                <asp:HyperLink ID="faqHL" runat="server" NavigateUrl="FAQ.aspx" Text="|FAQ|"></asp:HyperLink>
+                <asp:HyperLink ID="serverHL" runat="server" NavigateUrl="myaccount.aspx" Text="|客服中心|"></asp:HyperLink>
+                <%--<asp:HyperLink ID="adHL" runat="server" 
+                    NavigateUrl="management_tools/index.aspx" Text="|管理者工具|" Visible="False"></asp:HyperLink>--%>
+                <asp:HyperLink ID="adHL_new" runat="server" 
+                    NavigateUrl="admin/index.aspx" Text="|管理者工具|" Visible="False"></asp:HyperLink>
+            </div>
+            <div class="banner_center">
+            </div>
+            <div class="banner_down">
+            <asp:ContentPlaceHolder ID="banner_down" runat="server">
+            </asp:ContentPlaceHolder>
+                            <asp:Image ID="search_B1" runat="server" 
+                                ImageUrl="image/lelecoco/search_B1.jpg" CssClass="imgstyle" />
+                            <asp:TextBox ID="search_keyword" runat="server" CssClass="imgstyle"></asp:TextBox>
+                            <asp:DropDownList ID="search_class" runat="server" 
+                    AppendDataBoundItems="True" CssClass="imgstyle" DataSourceID="sds_itemA" 
+                    DataTextField="itemA_name" DataValueField="itemA_no">
+                                <asp:ListItem Value="00">商品全分類</asp:ListItem>
+                            </asp:DropDownList>
+                            
+                            <asp:ImageButton ID="search_GO" runat="server" CssClass="imgstyle" 
+                                ImageUrl="image/lelecoco/search_B2.jpg" onclick="search_GO_Click" />
+                                <asp:ImageButton ID="search_other" runat="server" CssClass="imgstyle" 
+                                ImageUrl="image/lelecoco/search_B3.jpg" onclick="search_other_Click" />
+                            <%--<asp:HyperLink ID="search_other" runat="server" CssClass="imgstyle" 
+                                ImageUrl="image/lelecoco/search_B3.jpg" NavigateUrl="search_other.aspx"></asp:HyperLink>--%>
+                            <asp:HyperLink ID="banner_B1" runat="server">[banner_B1]</asp:HyperLink>
+                            <asp:HyperLink ID="banner_B2" runat="server">[banner_B2]</asp:HyperLink>
+                            <asp:HyperLink ID="banner_B3" runat="server">[banner_B3]</asp:HyperLink>
+            </div>
+        </div>
+        <div class="nav">
+        <asp:ContentPlaceHolder ID="nav" runat="server">
+        </asp:ContentPlaceHolder>
+            <ul class="navigation">
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="index.aspx">首頁</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=013">人氣玩具</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=001">VIP滿額禮</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=002">女人我最大</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=003">內著塑衣</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=004">日韓服飾</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=005">好康二手</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=006">保健塑身</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=007">美妝保養</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=008">時尚玩家</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=009">強打售屋</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=010">暢銷3C</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=011">精品鞋包</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+              <li>
+                <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+                <dl>
+                  <dt>
+                    <a href="products_list.aspx?page=012">熱門租屋</a>
+                  </dt>
+                </dl>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+              </li>
+            </ul>
+        </div>
+        <div class="main">
+        <asp:ContentPlaceHolder id="main" runat="server">        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="aboutUs">
+        <asp:ContentPlaceHolder id="aboutUs" runat="server">        
+        </asp:ContentPlaceHolder>
+            <asp:HyperLink ID="aboutUsHL" runat="server" Text="|關於VIP商城|" 
+                NavigateUrl="aboutUs.aspx"></asp:HyperLink>
+            <asp:HyperLink ID="privacyHL" runat="server" Text="|個人隱私保密政策|" 
+                NavigateUrl="privacy.aspx"></asp:HyperLink>
+            <asp:HyperLink ID="obligationsHL" runat="server" Text="|客戶權利與義務|" 
+                NavigateUrl="obligations.aspx"></asp:HyperLink>
+            <asp:HyperLink ID="talkboardHL" runat="server" Text="|留言板|" 
+                NavigateUrl="msg.aspx"></asp:HyperLink>
+            <asp:HyperLink ID="callUsHL" runat="server" Text="|聯絡VIP商城|" 
+                NavigateUrl="callUs.aspx"></asp:HyperLink>
+        </div>
+        <div class="buttonS">
+        <asp:ContentPlaceHolder id="buttonS" runat="server">        
+        </asp:ContentPlaceHolder>
+            <asp:Image ID="buttonSIMG" runat="server" ImageUrl="image/lelecoco/buttonS.jpg" />
+        </div>
+    </div>
+    <div class="littleMon">
+        Codeing By littleMon
+    </div>
+    <asp:SqlDataSource ID="sds_itemA" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:zhongdikaiConnectionString %>" 
+        SelectCommand="SELECT [itemA_name], [itemA_no] FROM [ItemA] ORDER BY [itemA_no]">
+    </asp:SqlDataSource>
+    <!--瀏覽紀錄-->
+    <div id="abgne_float_ad">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+                <td align="right">
+                    <table border="0" cellpadding="0" cellspacing="0" width="60" style=" border:1px solid #e6e6e6;">
+                        <asp:Literal ID="lt_rightAD" runat="server"></asp:Literal>
+                        <tr>
+                            <td class="floatFontstyle" align="center"><img class="imgstyle" src="image/lelecoco/asc.gif" />
+                                <a class="imgstyle" href="#top">TOP</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
