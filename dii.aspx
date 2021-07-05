@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" inherits="dii, App_Web_dii.aspx.cdcab7d2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="dii.aspx.cs" Inherits="dii" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
